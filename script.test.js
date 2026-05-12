@@ -45,6 +45,7 @@ describe("Budget App Assessment", () => {
     document.getElementById("incomeBtn").click();
 
     const list = document.getElementById("incomeList");
+    var inkomst(amount)
 
     expect(list.children.length).toBe(1);
     expect(list.textContent).toContain("20000");
