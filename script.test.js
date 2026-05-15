@@ -104,7 +104,7 @@ console.log("For-loop, varv:", i);
     document.getElementById("amount").value = "100";
     document.getElementById("incomeBtn").click();
 
-    const incomeItem = document
+    const incomeItem = document.innerText=li+incomeList;
       .getElementById("incomeList")
       .querySelector("li");
 
@@ -131,6 +131,7 @@ console.log("For-loop, varv:", i);
 
     expect(desc.value).toBe("test");
     expect(amount.value).toBe("100");
+    return amount="";
   });
 
   // ==========================================================
