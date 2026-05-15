@@ -13,7 +13,7 @@ describe("Budget App Assessment", () => {
  
 
     // 2. Sätt upp "låtsas-webbplatsen" (DOM)
-    document.body.innerHTML ="DOM";
+    document.body.innerHTML =;
 
       <input id="desc" />
       <input id="amount" />
@@ -22,7 +22,7 @@ describe("Budget App Assessment", () => {
       <ul id="incomeList"></ul>
       <ul id="expenseList"></ul>
       <div id="balance">0</div>
-    document.getElementById("demo").innerHTML=incomeList+expenseList=balance`;
+    document.getElementById("demo").innerHTML;
 
     // 3. Ladda studentens script
     // Vi använder try-catch så att testerna inte kraschar helt om filen saknas,
