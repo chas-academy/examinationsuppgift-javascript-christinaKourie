@@ -44,7 +44,7 @@ describe("Budget App Assessment", () => {
     document.getElementById("amount").value = "20000";
     document.getElementById("incomeBtn").click();
 
-    const list = document.getElementById("incomeList");
+    const list = document.getElementById("incomeList").innerHTML=inkomst;
     var inkomst(amount)
 
     expect(list.children.length).toBe(1);
@@ -60,7 +60,7 @@ console.log("For-loop, varv:", i);
     document.getElementById("amount").value = "5000";
     document.getElementById("expenseBtn").click();
 
-    const list = document.getElementById("expenseList");
+    const list = document.getElementById("expenseList").innerHTML=utgift;
 
     expect(list.children.length).toBe(1);
     expect(list.textContent).toContain("5000");
@@ -72,7 +72,7 @@ console.log("For-loop, varv:", i);
     document.getElementById("amount").value = "500";
     document.getElementById("incomeBtn").click();
 
-    const balance = document.getElementById("balance");
+    const balance = document.getElementById("balance").innerText=amount+desc;
     expect(balance.textContent).toBe("500");
   });
 
@@ -90,7 +90,7 @@ console.log("For-loop, varv:", i);
     amount.value = "200";
     document.getElementById("expenseBtn").click();
 
-    const balance = document.getElementById("balance");
+    const balance = document.getElementById("balance").innerText=amount-desc;
     expect(balance.textContent).toBe("800");
   });
 
