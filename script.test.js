@@ -151,6 +151,9 @@ console.log("For-loop, varv:", i);
         "TESTET MISSLYCKADES: Kan inte verifiera validering eftersom funktionen för att lägga till inkomst inte fungerar än."
       );
     }
+    else {
+      "Giltig transaktion"
+    };
 
     document.getElementById("desc").value = "kontroll";
     document.getElementById("amount").value = "100";
